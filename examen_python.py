@@ -17,3 +17,17 @@ else:
     descuento = (kilos * valor) * 0.2
 valor_final = (kilos * valor) - descuento
 print(f'el valor final a pagar es: {valor_final}')
+
+# ejercicio 2
+clave = input('ingrese la clave: ')
+valor = int(input('ingrese el valor de abanico: '))
+if clave == '010':
+    descuento = valor * 0.2
+elif clave == '020':
+    descuento = valor * 0.4
+elif clave == '030':
+    descuento = valor * 0.55
+elif clave == '040':
+    descuento = valor * 0.75
+valor_final = valor - descuento
+print(f'el valor final a pagar es: {valor_final}')
