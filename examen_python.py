@@ -47,3 +47,14 @@ if marca == 'NOSY':
 if valor < 4000 and marca != 'NOSY':
     valor_final = valor + (valor * 0.3)
     print(f'el valor final a pagar es: {valor_final}')
+
+# ejercicio 4
+hectareas = int(input('ingrese la cantidad de hectareas: '))
+if hectareas > 5:
+    print('el porcentaje de pinos es: 80%')
+    print('el porcentaje de oyamel es: 15%')
+    print('el porcentaje de cedros es: 5%')
+else:
+    print('el porcentaje de pinos es: 45%')
+    print('el porcentaje de oyamel es: 25%')
+    print('el porcentaje de cedros es: 35%')
