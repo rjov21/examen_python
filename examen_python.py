@@ -31,3 +31,19 @@ elif clave == '040':
     descuento = valor * 0.75
 valor_final = valor - descuento
 print(f'el valor final a pagar es: {valor_final}')
+
+# ejercicio 3
+valor = int(input('ingrese el valor del estereo: '))
+marca = input('ingrese la marca: ')
+if valor > 4000:
+    descuento = valor * 0.2
+    valor_final = valor - descuento
+    print(f'el valor final a pagar es: {valor_final}')
+if marca == 'NOSY':
+    descuento = valor * 0.1
+    valor_iva = (valor - descuento) * 0.3
+    valor_final = valor + valor_iva
+    print(f'el valor final a pagar es: {valor_final}')
+if valor < 4000 and marca != 'NOSY':
+    valor_final = valor + (valor * 0.3)
+    print(f'el valor final a pagar es: {valor_final}')
